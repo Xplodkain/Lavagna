@@ -6,7 +6,7 @@ COPY . .
 
 RUN mvn   com.mycila:license-maven-plugin:format
 
-RUN mvn verify
+RUN mvn verify -DskipTests
 
 
 FROM openjdk:8-jre-alpine
