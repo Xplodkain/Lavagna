@@ -52,6 +52,10 @@ services:
     networks: 
       - lavagna
       - frontend
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
 
 
   mysql:
